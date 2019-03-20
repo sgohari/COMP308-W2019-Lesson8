@@ -89,7 +89,6 @@ module.exports.processLoginPage = (req, res, next) => {
         expiresIn: 604800 // 1 Week
       });
 
-
       return res.json({success: true, msg: 'User Logged in Successfully!', user: {
         id: user._id,
         displayName: user.displayName,
